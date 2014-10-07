@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style type="text/css">
+    .btn-custom {
+      background-color: hsl(86, 79%, 28%) !important;
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b5ed6c", endColorstr="#4e7f0e");
+      background-image: -khtml-gradient(linear, left top, left bottom, from(#b5ed6c), to(#4e7f0e));
+      background-image: -moz-linear-gradient(top, #b5ed6c, #4e7f0e);
+      background-image: -ms-linear-gradient(top, #b5ed6c, #4e7f0e);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b5ed6c), color-stop(100%, #4e7f0e));
+      background-image: -webkit-linear-gradient(top, #b5ed6c, #4e7f0e);
+      background-image: -o-linear-gradient(top, #b5ed6c, #4e7f0e);
+      background-image: linear-gradient(#b5ed6c, #4e7f0e);
+      border-color: #4e7f0e #4e7f0e hsl(86, 79%, 18%);
+      color: #fff !important;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.66);
+      -webkit-font-smoothing: antialiased;
+    }
+    .project-title{
+      font-size: 20px;
+      font-family: 'Cherry Cream Soda', cursive;
+    }
+    #box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover, #box7:hover, #box8:hover, #box9:hover, #box10:hover, #box11:hover{
+      outline: 1px solid yellow;
+    }
+  </style>
+<title>Mini Portfolio | Work</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font/css/fontello.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Cherry+Cream+Soda' rel='stylesheet' type='text/css'>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53731052-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="../index.html"><img src="img/profile.png" alt=""></a>
+      <ul class="nav nav-collapse pull-right">
+        <li><a href="../index.html"><i class="icon-user"></i> Profile</a></li>
+        <li><a href="skills.html"><i class="icon-trophy"></i> Skills</a></li>
+        <li><a href="work.html" class="active"><i class="icon-picture"></i> Work</a></li>
+        <li><a href="resume.html"><i class="icon-doc-text"></i> Resume</a></li>
+      </ul>
+      <div class="nav-collapse collapse"></div>
+    </div>
+  </div>
+</div>
+<div class="container work">
+  <h2>My Work</h2>
+    <section class="main col col-lg-8">
+        <!-- Academic -->
+        <section id="Academic">
+            <h2 id="sectionName">Academic section</h2>
+
+            <div id="database">
+              <div id="box1">
+                <p class="project-title" id="spatial">Storage and Retrieval in Spatial Database</p>
+                <p id="duration">[Oracle 12c, Java, SQL]</p>
+                <p id="project-description">Developed a spatial database which consisted of USC campus stored as set 
+                              of polygons and kept track of various objects like fire hydrants, buildings 
+                              on fire and those not on fire in Oracle spatial database. Queries were fired 
+                              on spatial database to retrieve list of spatial objects near other desired 
+                              objects such as fire hydrants near buildings on fire, etc. 
+                              This project was an introduction to spatial database and its handling.</p>
+                <a href="https://github.com/PratikRJoshi/Spatial-Database-Storage-and-Retrieval" target="_blank" class="btn btn-custom ">Check out project source</a>
+              </div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+
+            <div id="AI">
+              <div id="box2">
+                <p class="project-title" id="neural">Neural Network for Image Detection</p>
+                <p id="duration">[Java]</p>
+                <p id="project-description">Designed a self-learning Neural Network for detecting images. The pixel values 
+                              of the images were provided in binary file consisting of a 28X28 pixel grid, 
+                              with each pixel being either 0 or 1 depending on whether it is a part of the image or not.
+                              Trained the network with a set of 40,000 images so as to make it learn correct 
+                              detection of images. Then the network was tested with a different set of 40,000 sample
+                              images to check for the accuracy in the prediction of images. Due to the excessive training,
+                              the Neural Network achieved 91% prediction accuracy.</p>
+                <a href="https://github.com/PratikRJoshi/Neural_Network_Implementation" target="_blank" class="btn btn-custom">Check out project source</a>
+              </div>
+                <br/>
+                <br/>
+                <br/>
+
+              <div id="box3">
+                <p class="project-title" id="logicSAT">Logic and SAT NP-complete Algorithm Solver</p>
+                <p id="duration">[Java]</p>
+                <p id="project-description">Implemented modified Propositional Logic Resolution NP-complete algorithm in Java, 
+                              to determine feasibility and if feasible, come up with seating arrangement in particular 
+                              wedding for given number of guests on given number of tables each of whom had friendship 
+                              or enmity with other guests. 
+                              The program took input as number of tables and guest and generated clauses in
+                              First-Order Logic resolving which gave output of feasibility.</p>
+                <a href="https://github.com/PratikRJoshi/Logic-and-SAT-Problem" target="_blank" class="btn btn-custom">Check out project source</a>
+              </div>      
+                <br/>
+                <br/>
+                <br/> 
+
+              <div id="box4">
+                <p class="project-title" id="game">Game Playing - Connect Four</p>
+                <p id="duration">[Java]</p>
+                <p id="project-description">Implemented the Connect Four two-player game making use of MiniMax and 
+                              Alpha-Beta pruning concept of Game Playing in Artificial Intelligence agents. 
+                              The project consisted of the Connect Four game for which the output given was the 
+                              first move to be made by the current player so as to maximize his/her chances of winning
+                              assuming the other player plays optimal moves at every step.
+                              This project made extensive use of recursion process and allowed us to control and 
+                              manipulate the recursive steps - by pruning the successive steps - as and when needed to get
+                              the desired, maximizing output.</p>
+                <a href="https://github.com/PratikRJoshi/Game-Playing-MiniMax-Algorithm" target="_blank" class="btn btn-custom">Check out project source</a>
+              </div>
+                <br/>
+                <br/>
+                <br/> 
+            </div>
+
+
+            <div id="IR">
+              <div id="box5">
+                <p class="project-title" id="indexing">Information Indexing and Retrieval from a mirror</p>
+                <p id="duration">[Java, HTML, Google Maps API, Apache Nutch, Apache Solr, Apache Tika]</p>
+                <p id="project-description">Developed spatial index using Apache Solr to index 11GB of PDF corpus which was 
+                              retrieved from mirror using Apache Nutch crawler.Used Apache Tika Parser to extract 
+                              relevant contents from corpus before indexing files.
+                              Used Google API to geo-tag files in the corpus based on the latitude and longitude 
+                              values for each file.</p>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B2_P0L4RDnc" frameborder="0" allowfullscreen></iframe>
+                <br/>
+                <a href="https://github.com/PratikRJoshi/Solr-Indexer-and-Google-Maps-Geo-Tagging" target="_blank" class="btn btn-custom">Check out project source</a>
+              </div>
+                <br/>
+                <br/>
+                <br/> 
+            </div>
+            
+
+            <div id="box6">
+              <p class="project-title" id="non-profit">Website Development for Non-profit Organization</p>
+              <p id="duration">[HTML, CSS, jQuery, Drupal, PHP]</p>
+              <p id="project-description">Undertook the role of a Website Developer in a team of 7 for redesign and implementation of 
+                            website for Non-profit Organization, The Jericho Road Pasadena. Our aim was to redesign the 
+                            site’s layout for better User Experience and make backend changes using Drupal CMS to increase 
+                            the rendering speed and make site more efficient. My work resulted in an increase by more than 
+                            90% within a month in the number of volunteers signing up per month and increase in ease of work 
+                            organization for organization’s Director.</p>
+              <a href="http://www.jrpasadena.org/" target="_blank" class="btn btn-custom">Go to website</a>
+            </div>
+                <br/>
+                <br/>
+                <br/> 
+
+            <div id="web">
+              <div id="box7">
+                <p class="project-title" id="android">Android Weather App</p>
+                <p id="duration">[HTML, CSS, Javascript, PHP, Servlets, JSON, Amazon EC2, AJAX, Facebook API, Yahoo’s YUI Datatable, Yahoo’s Weather API, OAuth and Eclipse IDE]</p>
+                <p id="project-description">Developed Web application that queries and scrapes Yahoo Weather service using 
+                              regular expressions and displays current weather and weather forecasts for 5 upcoming days. 
+                              User has option of posting weather details and/or weather forecasts on Facebook. 
+                              Web and Android clients were developed providing 2 different interfaces as per specifications. 
+                              Backend code was common (to Web and Android clients) since it was passing result as JSON object.
+                              Used - [HTML, CSS, Javascript, PHP, Servlets, JSON, Amazon EC2, AJAX, Facebook API, 
+                              Yahoo’s YUI Datatable, Yahoo’s Weather API, OAuth and Eclipse IDE]</p>
+                <!-- <p id="github"><a href="https://github.com/PratikRJoshi/Solr-Indexer-and-Google-Maps-Geo-Tagging">Link to the project source</a></p> -->
+              </div>
+                <br/>
+                <br/>
+                <br/> 
+
+              <div id="box8">
+                <p class="project-title" id="weatherForecast">Weather Forecasting website using a PHP Parser</p>
+                <p id="duration">[HTML, CSS, PHP]</p>
+                <p id="project-description">Designed and developed website that parsed data using PHP Parser from Yahoo Weather service 
+                              and displayed details on webpage. For implementation, HTML, CSS, Javascript, PHP, AJAX, JSON, 
+                              Facebook API, Servlets, OAuth were used.</p>
+                <!-- <p id="github"><a href="https://github.com/PratikRJoshi/Solr-Indexer-and-Google-Maps-Geo-Tagging">Link to the project source</a></p> -->
+              </div>
+                <br/>
+                <br/>
+                <br/> 
+            </div>
+
+            <div id="box9">
+              <p class="project-title" id="crowdSourcing">Android Application using the concept of Crowdsourcing</p>
+              <p id="duration">[Android SDK]</p>
+              <p id="project-description">Developed Android application called ‘SnapDeal’ that used crowd sourced data about local shopping 
+                            deals from users and displayed them on forum-like page for all other users to post their reviews 
+                            and contribute. Users had option of uploading photos of deals they come across or write short 
+                            description about it on the forum. Other users would rate the deals and the display of deals would
+                            alter based on their average ratings. This project introduced me to Android SDK and Mobile development.
+                            Used - Android SDK, Eclipse, WAMP, PHP, MySQL</p>
+              <!-- <p id="github"><a href="https://github.com/PratikRJoshi/Game-Playing-MiniMax-Algorithm">Link to the project source</a></p> -->
+            </div>
+                <br/>
+                <br/>
+                <br/> 
+
+          </section>
+
+
+
+          <section id="Curiosity">
+            <h2 id="sectionName">Independent Projects</h2>
+
+            <div id="box10">
+              <p class="project-title" id="iOS-House">iOS Housing App</p>
+              <p id="duration">[Objective-C, XCode 5.1, iOS 7, Facebook Graph API, Google Maps and Places API, SWRevealViewController]</p>
+              <p id="project-description"><ul><li type="square">Developed an iPhone to extract subleasing/housing posts from Facebook pages of USC</li>
+                                          <li type="square">Rendered a map with location of apartment mentioned in post with additional location information about nearby amenities like ATMs, grocery stores and restaurants</li>
+                                          <li type="square">Used Facebook Graph API to extract feeds, Google Maps and Places API to render locations</li>
+                                          <li type="square">User would log in, give requested permissions to app and would get back list of posts related to housing.</li></ul></p>
+              <a href="https://github.com/PratikRJoshi/HousingApp" target="_blank" class="btn btn-custom">Check out project source</a>
+            </div>
+                <br/>
+                <br/>
+                <br/> 
+
+            <div id="box11">
+              <p class="project-title" id="iOS-RSS">RSS News Feed App</p>
+              <p id="duration">[Objective-C, iOS 7, Xcode, Evernote API]</p>
+              <p id="project-description">Implemented modified Propositional Logic Resolution NP-complete algorithm in Java, 
+                            to determine feasibility and if feasible, come up with seating arrangement in particular 
+                            wedding for given number of guests on given number of tables each of whom had friendship 
+                            or enmity with other guests. 
+                            The program took input as number of tables and guest and generated clauses in
+                            First-Order Logic resolving which gave output of feasibility.</p>
+              <a href="https://github.com/PratikRJoshi/RSS-Feed" target="_blank" class="btn btn-custom">Check out project source</a>
+            </div>        
+                <br/>
+                <br/>
+                <br/> 
+          </section>
+      </section>
+
+
+
+      <!-- siderbar -->
+      <section class="main col col-lg-4">
+        <section id="fav">
+          <h2>My Favourite Projects</h2>
+          <a id="favList" href="work.html#neural">Neural Network for Image Detection</a>
+          <br/>
+          <a id="favList" href="work.html#logicSAT">Logic and SAT NP-complete Algorithm Solver</a>
+          <br/>
+          <a id="favList" href="work.html#game">Game Playing - Connect Four</a>
+          <br/>
+          <a id="favList" href="work.html#iOS-House">iOS Housing App</a>
+          <br/>
+          <a id="favList" href="work.html#iOS-RSS">RSS News Feed App</a>
+          <br/>
+        </section>
+      </section>
+    </div>
+
+<!-- </div> -->
+<div class="row social">
+  <ul class="social-icons">
+    <li id="fbHover"><a href="https://www.facebook.com/prateek.joshi.12" target="_blank"><img data-placement="top" data-toggle="tooltip" data-original-title="Because your social life speaks a lot about you!" src="img/fb.png" alt=""></a></li>
+    <li><a href="https://twitter.com/Pratik45503649" target="_blank"><img data-placement="top" data-toggle="tooltip" data-original-title="Because what you tweet speaks a lot about you!" src="img/tw.png" alt=""></a></li>
+    <li><a href="google.com/+PratikJoshi3" target="_blank"><img data-placement="top" data-toggle="tooltip" data-original-title="Because Google is everywhere!" src="img/go.png" alt=""></a></li>
+    <li><a href="https://www.linkedin.com/in/pratikrvjoshi/" target="_blank"><img data-placement="top" data-toggle="tooltip" data-original-title="Because your professional window opens here!" src="img/ln.png" alt=""></a></li>
+    <li><a href="http://www.stumbleupon.com/stumbler/JoshiPratik" target="_blank"><img data-placement="top" data-toggle="tooltip" data-original-title="Because the places you stumble upon can take you places!" src="img/st.png" alt=""></a></li>
+    <li><a href="https://www.quora.com/Pratik-Joshi-13" target="_blank"><img data-placement="top" data-toggle="tooltip" data-original-title="Because what you ask shows how you think!" src="img/qr.png" alt=""></a></li>
+  </ul>
+</div>
+<div class="footer">
+  <div class="container">
+    <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
+  </div>
+  <div class="modal-body">
+    <form action="mail.php" method="post">
+      <input type="text" placeholder="Your Name" name="name">
+      <input type="text" placeholder="Your Email" name="email">
+      <input type="text" placeholder="Website (Optional)" name="homepage">
+      <textarea rows="3" style="width:80%" name="message"></textarea>
+      <br>
+      <button type="submit" class="btn btn-large" name="submit" value="submit"><i class="icon-paper-plane"></i> SUBMIT</button>
+    </form>
+  </div>
+</div>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$('#myModal').modal('hidden')
+</script>
+<script src="js/jquery.fancybox.js?v=2.1.5"></script>
+<script>
+$(function(){
+    $("[data-toggle='tooltip']").tooltip();
+  });
+</script>
+</body>
+</html>

@@ -22,8 +22,8 @@
       font-size: 20px;
       font-family: 'Cherry Cream Soda', cursive;
     }
-    #box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover, #box7:hover, #box8:hover, #box9:hover, #box10:hover, #box11:hover{
-      outline: 1px solid yellow;
+    #box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover, #box7:hover, #box8:hover, #box9:hover, #box10:hover, #box11:hover, #box12:hover, #box13:hover, #box14:hover{
+      outline: 4px solid yellow;
     }
   </style>
 <title>Mini Portfolio | Work</title>
@@ -67,17 +67,39 @@
         <section id="Academic">
             <h2 id="sectionName">Academic section</h2>
 
+            <div id="video">
+              <div id="box14">
+                <p class="project-title" id="vd">Video Player and Editor</p>
+                <p id="duration">[Java, Seam Carving]</p>
+                <p id="project-description"><ul>
+                                                <li type = "circle">Developed video player that rendered video from given set of images</li>
+                                                <li type = "circle">Provided options to resize video, adjust frame rate of rendering, and control degree of aliasing</li>
+                                                <li type = "circle">Implemented ‘content-aware’ based resizing <b>'Seam Carving’</b> algorithm to keep points of interest in video while resizing</li>
+                                            </ul>
+                </p>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/nGAx4ER_s4M" frameborder="0" allowfullscreen></iframe>
+                <br>
+                <a href="https://github.com/PratikRJoshi/VideoEditing" target="_blank" class="btn btn-custom ">Check out project source</a>
+              </div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+
             <div id="database">
               <div id="box1">
                 <p class="project-title" id="spatial">Storage and Retrieval in Spatial Database</p>
                 <p id="duration">[Oracle 12c, Java, SQL]</p>
-                <p id="project-description">Developed a spatial database which consisted of USC campus stored as set 
-                              of polygons and kept track of various objects like fire hydrants, buildings 
-                              on fire and those not on fire in Oracle spatial database. Queries were fired 
-                              on spatial database to retrieve list of spatial objects near other desired 
-                              objects such as fire hydrants near buildings on fire, etc. 
-                              This project was an introduction to spatial database and its handling.</p>
-                <a href="https://github.com/PratikRJoshi/Spatial-Database-Storage-and-Retrieval" target="_blank" class="btn btn-custom ">Check out project source</a>
+                <p id="project-description"><ul>
+                                                <li type="circle">Developed a spatial database which consisted of USC campus stored as set 
+                                                                  of polygons and kept track of various objects like fire hydrants, buildings 
+                                                                  on fire and those not on fire in Oracle spatial database.
+                                                </li>
+                                                <li type="circle">Queries were fired on spatial database to retrieve list of spatial objects near other desired objects such as fire hydrants near buildings on fire, etc. This project was an introduction to spatial database and its handling.
+                                                </li>
+                                            </ul>
+                </p>
+                <a href="https://github.com/PratikRJoshi/CSCI-585-Database-Systems/tree/master/1.%20Spatial-Database-Storage-and-Retrieval" target="_blank" class="btn btn-custom ">Check out project source</a>
               </div>
                 <br/>
                 <br/>
@@ -88,14 +110,23 @@
               <div id="box2">
                 <p class="project-title" id="neural">Neural Network for Image Detection</p>
                 <p id="duration">[Java]</p>
-                <p id="project-description">Designed a self-learning Neural Network for detecting images. The pixel values 
-                              of the images were provided in binary file consisting of a 28X28 pixel grid, 
-                              with each pixel being either 0 or 1 depending on whether it is a part of the image or not.
-                              Trained the network with a set of 40,000 images so as to make it learn correct 
-                              detection of images. Then the network was tested with a different set of 40,000 sample
-                              images to check for the accuracy in the prediction of images. Due to the excessive training,
-                              the Neural Network achieved 91% prediction accuracy.</p>
-                <a href="https://github.com/PratikRJoshi/Neural_Network_Implementation" target="_blank" class="btn btn-custom">Check out project source</a>
+                <p id="project-description"><ul>
+                                                <li type="circle">Designed a self-learning Neural Network for detecting images.
+                                                </li>
+                                                <li type="circle">The pixel values of the images were provided in binary file consisting of a 28X28 pixel grid, with each pixel being either 0 or 1 depending on whether it is a part of the image or not.
+                                                </li>
+                                                <li type="circle">Trained the network with a set of 40,000 images so as to make it learn correct 
+                                                                  detection of images.
+                                                </li>
+                                                <li type="circle">Then the network was tested with a different set of 40,000 sample
+                                                                  images to check for the accuracy in the prediction of images.
+                                                </li>
+                                                <li type="circle">Due to the excessive training, the Neural Network achieved 91% prediction accuracy.
+                                                </li>
+                                            </ul>
+
+                              </p>
+                <a href="https://github.com/PratikRJoshi/CSCI-561-Artificial-Intelligence/tree/master/4.%20Neural_Network_Implementation" target="_blank" class="btn btn-custom">Check out project source</a>
               </div>
                 <br/>
                 <br/>
@@ -104,13 +135,16 @@
               <div id="box3">
                 <p class="project-title" id="logicSAT">Logic and SAT NP-complete Algorithm Solver</p>
                 <p id="duration">[Java]</p>
-                <p id="project-description">Implemented modified Propositional Logic Resolution NP-complete algorithm in Java, 
-                              to determine feasibility and if feasible, come up with seating arrangement in particular 
-                              wedding for given number of guests on given number of tables each of whom had friendship 
-                              or enmity with other guests. 
-                              The program took input as number of tables and guest and generated clauses in
-                              First-Order Logic resolving which gave output of feasibility.</p>
-                <a href="https://github.com/PratikRJoshi/Logic-and-SAT-Problem" target="_blank" class="btn btn-custom">Check out project source</a>
+                <p id="project-description"><ul>
+                                                <li type="circle">Implemented modified Propositional Logic Resolution NP-complete algorithm in Java, 
+                                                                  to determine feasibility and if feasible, come up with seating arrangement in particular wedding for given number of guests on given number of tables each of whom had friendship or enmity with other guests.
+                                                </li>
+                                                <li type="circle">The program took input as number of tables and guest and generated clauses in
+                                                                  First-Order Logic resolving which gave output of feasibility.
+                                                </li>
+                                            </ul> 
+                              </p>
+                <a href="https://github.com/PratikRJoshi/CSCI-561-Artificial-Intelligence/tree/master/3.%20Logic-and-SAT-Problem" target="_blank" class="btn btn-custom">Check out project source</a>
               </div>      
                 <br/>
                 <br/>
@@ -119,15 +153,21 @@
               <div id="box4">
                 <p class="project-title" id="game">Game Playing - Connect Four</p>
                 <p id="duration">[Java]</p>
-                <p id="project-description">Implemented the Connect Four two-player game making use of MiniMax and 
-                              Alpha-Beta pruning concept of Game Playing in Artificial Intelligence agents. 
-                              The project consisted of the Connect Four game for which the output given was the 
-                              first move to be made by the current player so as to maximize his/her chances of winning
-                              assuming the other player plays optimal moves at every step.
-                              This project made extensive use of recursion process and allowed us to control and 
-                              manipulate the recursive steps - by pruning the successive steps - as and when needed to get
-                              the desired, maximizing output.</p>
-                <a href="https://github.com/PratikRJoshi/Game-Playing-MiniMax-Algorithm" target="_blank" class="btn btn-custom">Check out project source</a>
+                <p id="project-description"><ul>
+                                                <li type="circle">Implemented the Connect Four two-player game making use of MiniMax and 
+                                                                  Alpha-Beta pruning concept of Game Playing in Artificial Intelligence agents.
+                                                </li>
+                                                <li type="circle">The project consisted of the Connect Four game for which the output given was the 
+                                                                  first move to be made by the current player so as to maximize his/her chances of winning
+                                                                  assuming the other player plays optimal moves at every step.
+                                                </li>
+                                                <li type="circle">This project made extensive use of recursion process and allowed us to control and 
+                                                                  manipulate the recursive steps - by pruning the successive steps - as and when needed to get the desired, maximizing output.
+                                                </li>
+                                            </ul> 
+                              
+                              </p>
+                <a href="https://github.com/PratikRJoshi/CSCI-561-Artificial-Intelligence/tree/master/2.%20Game-Playing-MiniMax-Algorithm" target="_blank" class="btn btn-custom">Check out project source</a>
               </div>
                 <br/>
                 <br/>
@@ -139,14 +179,19 @@
               <div id="box5">
                 <p class="project-title" id="indexing">Information Indexing and Retrieval from a mirror</p>
                 <p id="duration">[Java, HTML, Google Maps API, Apache Nutch, Apache Solr, Apache Tika]</p>
-                <p id="project-description">Developed spatial index using Apache Solr to index 11GB of PDF corpus which was 
-                              retrieved from mirror using Apache Nutch crawler.Used Apache Tika Parser to extract 
-                              relevant contents from corpus before indexing files.
-                              Used Google API to geo-tag files in the corpus based on the latitude and longitude 
-                              values for each file.</p>
+                <p id="project-description"><ul>
+                                                <li type="circle">Developed spatial index using Apache Solr to index 11GB of PDF corpus which was 
+                                                                  retrieved from mirror using Apache Nutch crawler.Used Apache Tika Parser to extract 
+                                                                  relevant contents from corpus before indexing files.
+                                                </li>
+                                                <li type="circle">Used Google API to geo-tag files in the corpus based on the latitude and longitude 
+                                                                  values for each file.
+                                                </li>
+                                            </ul>
+                              </p>
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B2_P0L4RDnc" frameborder="0" allowfullscreen></iframe>
                 <br/>
-                <a href="https://github.com/PratikRJoshi/Solr-Indexer-and-Google-Maps-Geo-Tagging" target="_blank" class="btn btn-custom">Check out project source</a>
+                <a href="https://github.com/PratikRJoshi/CSCI-572-Information-Retrieval-and-Web-Search-Engines/tree/master/3.%20Solr-Indexer-and-Google-Maps-Geo-Tagging" target="_blank" class="btn btn-custom">Check out project source</a>
               </div>
                 <br/>
                 <br/>
@@ -157,12 +202,18 @@
             <div id="box6">
               <p class="project-title" id="non-profit">Website Development for Non-profit Organization</p>
               <p id="duration">[HTML, CSS, jQuery, Drupal, PHP]</p>
-              <p id="project-description">Undertook the role of a Website Developer in a team of 7 for redesign and implementation of 
-                            website for Non-profit Organization, The Jericho Road Pasadena. Our aim was to redesign the 
-                            site’s layout for better User Experience and make backend changes using Drupal CMS to increase 
-                            the rendering speed and make site more efficient. My work resulted in an increase by more than 
-                            90% within a month in the number of volunteers signing up per month and increase in ease of work 
-                            organization for organization’s Director.</p>
+              <p id="project-description"><ul>
+                                              <li type="circle">Undertook the role of a Website Developer in a team of 7 for redesign and implementation 
+                                                                of website for Non-profit Organization, The Jericho Road Pasadena.
+                                              </li>
+                                              <li type="circle">Our aim was to redesign the site’s layout for better User Experience and make backend 
+                                                                changes using Drupal CMS to increase the rendering speed and make site more efficient.
+                                              </li>
+                                              <li type="circle">My work resulted in an increase by more than 90% within a month in the number of 
+                                                                volunteers signing up per month and increase in ease of work organization for organization’s Director.
+                                              </li>
+                                          </ul>  
+                </p>
               <a href="http://www.jrpasadena.org/" target="_blank" class="btn btn-custom">Go to website</a>
             </div>
                 <br/>
@@ -173,13 +224,24 @@
               <div id="box7">
                 <p class="project-title" id="android">Android Weather App</p>
                 <p id="duration">[HTML, CSS, Javascript, PHP, Servlets, JSON, Amazon EC2, AJAX, Facebook API, Yahoo’s YUI Datatable, Yahoo’s Weather API, OAuth and Eclipse IDE]</p>
-                <p id="project-description">Developed Web application that queries and scrapes Yahoo Weather service using 
-                              regular expressions and displays current weather and weather forecasts for 5 upcoming days. 
-                              User has option of posting weather details and/or weather forecasts on Facebook. 
-                              Web and Android clients were developed providing 2 different interfaces as per specifications. 
-                              Backend code was common (to Web and Android clients) since it was passing result as JSON object.
-                              Used - [HTML, CSS, Javascript, PHP, Servlets, JSON, Amazon EC2, AJAX, Facebook API, 
-                              Yahoo’s YUI Datatable, Yahoo’s Weather API, OAuth and Eclipse IDE]</p>
+                <p id="project-description"><ul>
+                                                <li type="circle">Developed Web application that queries and scrapes Yahoo Weather service using 
+                                                                  regular expressions and displays current weather and weather forecasts for 5 upcoming days. 
+                                                </li>
+                                                <li type="circle">User has option of posting weather details and/or weather forecasts on Facebook.
+                                                </li>
+                                                <li type="circle">Web and Android clients were developed providing 2 different interfaces as per 
+                                                                  specifications.
+                                                </li>
+                                                <li type="circle">Backend code was common (to Web and Android clients) since it was passing result as 
+                                                                  JSON object.
+                                                </li>
+
+                                            </ul>
+                               
+                               
+                              
+                </p>
                 <!-- <p id="github"><a href="https://github.com/PratikRJoshi/Solr-Indexer-and-Google-Maps-Geo-Tagging">Link to the project source</a></p> -->
               </div>
                 <br/>
@@ -188,10 +250,16 @@
 
               <div id="box8">
                 <p class="project-title" id="weatherForecast">Weather Forecasting website using a PHP Parser</p>
-                <p id="duration">[HTML, CSS, PHP]</p>
-                <p id="project-description">Designed and developed website that parsed data using PHP Parser from Yahoo Weather service 
-                              and displayed details on webpage. For implementation, HTML, CSS, Javascript, PHP, AJAX, JSON, 
-                              Facebook API, Servlets, OAuth were used.</p>
+                <p id="duration">[HTML, CSS, PHP, Javascript, AJAX]</p>
+                <p id="project-description"><ul>
+                                                <li type="circle">Designed and developed website that parsed data using PHP Parser from Yahoo Weather 
+                                                                  service and displayed details on webpage.
+                                                </li>
+                                                <li type="circle">For implementation, HTML, CSS, Javascript, PHP, AJAX, JSON, Facebook API, Servlets,   
+                                                                  OAuth were used.
+                                                </li>
+                                            </ul> 
+                </p>
                 <!-- <p id="github"><a href="https://github.com/PratikRJoshi/Solr-Indexer-and-Google-Maps-Geo-Tagging">Link to the project source</a></p> -->
               </div>
                 <br/>
@@ -202,13 +270,39 @@
             <div id="box9">
               <p class="project-title" id="crowdSourcing">Android Application using the concept of Crowdsourcing</p>
               <p id="duration">[Android SDK]</p>
-              <p id="project-description">Developed Android application called ‘SnapDeal’ that used crowd sourced data about local shopping 
-                            deals from users and displayed them on forum-like page for all other users to post their reviews 
-                            and contribute. Users had option of uploading photos of deals they come across or write short 
-                            description about it on the forum. Other users would rate the deals and the display of deals would
-                            alter based on their average ratings. This project introduced me to Android SDK and Mobile development.
-                            Used - Android SDK, Eclipse, WAMP, PHP, MySQL</p>
+              <p id="project-description"><ul>
+                                              <li type="circle">Developed Android application called ‘SnapDeal’ that used crowd sourced data about local 
+                                                                shopping deals from users and displayed them on forum-like page for all other users to post their reviews and contribute.
+                                              </li>
+                                              <li type="circle">Users had option of uploading photos of deals they come across or write short 
+                                                                description about it on the forum.
+                                              </li>
+                                              <li type="circle">Other users would rate the deals and the display of deals would
+                                                                alter based on their average ratings.
+                                              </li>
+                                              <li type="circle">This project introduced me to Android SDK and Mobile development.
+                                              </li>
+                                          </ul>
+                </p>
               <!-- <p id="github"><a href="https://github.com/PratikRJoshi/Game-Playing-MiniMax-Algorithm">Link to the project source</a></p> -->
+            </div>
+                <br/>
+                <br/>
+                <br/> 
+
+            <div id="box10">
+              <p class="project-title" id="crowdSourcing">XML Schema Parser</p>
+              <p id="duration">[XQuery, Java]</p>
+              <p id="project-description"><ul>
+                                              <li type="circle">Initially, XML file was created using the spatial data that was given.
+                                              </li>
+                                              <li type="circle">Java language was used to form the valid XML file.
+                                              </li>
+                                              <li type="circle">Then queires are formed using XQuery to query the XML files and get the results.
+                                              </li>
+                                          </ul>
+              </p>
+              <p id="github"><a href="https://github.com/PratikRJoshi/CSCI-585-Database-Systems/tree/master/2.%20XML_Schema_Parser_XQuery" target="_blank" class="btn btn-custom">Link to the project source</a></p>
             </div>
                 <br/>
                 <br/>
@@ -221,33 +315,57 @@
           <section id="Curiosity">
             <h2 id="sectionName">Independent Projects</h2>
 
-            <div id="box10">
+            <div id="box11">
               <p class="project-title" id="iOS-House">iOS Housing App</p>
               <p id="duration">[Objective-C, XCode 5.1, iOS 7, Facebook Graph API, Google Maps and Places API, SWRevealViewController]</p>
-              <p id="project-description"><ul><li type="square">Developed an iPhone to extract subleasing/housing posts from Facebook pages of USC</li>
-                                          <li type="square">Rendered a map with location of apartment mentioned in post with additional location information about nearby amenities like ATMs, grocery stores and restaurants</li>
-                                          <li type="square">Used Facebook Graph API to extract feeds, Google Maps and Places API to render locations</li>
-                                          <li type="square">User would log in, give requested permissions to app and would get back list of posts related to housing.</li></ul></p>
-              <a href="https://github.com/PratikRJoshi/HousingApp" target="_blank" class="btn btn-custom">Check out project source</a>
+              <p id="project-description"><ul>
+                                            <li type="square">Developed an iPhone to extract subleasing/housing posts from Facebook pages of USC</li>
+                                            <li type="square">Rendered a map with location of apartment mentioned in post with additional location  
+                                                            information about nearby amenities like ATMs, grocery stores and restaurants</li>
+                                            <li type="square">Used Facebook Graph API to extract feeds, Google Maps and Places API to render locations</li>
+                                            <li type="square">User would log in, give requested permissions to app and would get back list of posts related to housing.</li>
+                                          </ul>
+              </p>
+              <iframe width="560" height="315" src="//www.youtube.com/embed/UlJ25xvLw2I" frameborder="0" allowfullscreen></iframe>
+              <br>
+              <iframe width="560" height="315" src="//www.youtube.com/embed/6-ComveXH_E" frameborder="0" allowfullscreen></iframe>
+              <br>
+              <a href="https://github.com/PratikRJoshi/Inedependent-Projects/tree/master/HousingApp" target="_blank" class="btn btn-custom">Check out project source</a>
             </div>
                 <br/>
                 <br/>
                 <br/> 
 
-            <div id="box11">
+            <div id="box12">
               <p class="project-title" id="iOS-RSS">RSS News Feed App</p>
               <p id="duration">[Objective-C, iOS 7, Xcode, Evernote API]</p>
-              <p id="project-description">Implemented modified Propositional Logic Resolution NP-complete algorithm in Java, 
-                            to determine feasibility and if feasible, come up with seating arrangement in particular 
-                            wedding for given number of guests on given number of tables each of whom had friendship 
-                            or enmity with other guests. 
-                            The program took input as number of tables and guest and generated clauses in
-                            First-Order Logic resolving which gave output of feasibility.</p>
-              <a href="https://github.com/PratikRJoshi/RSS-Feed" target="_blank" class="btn btn-custom">Check out project source</a>
+              <p id="project-description"><ul>
+                                              <li type="square">Developed an iPhone app that fetched news feeds from the given websites
+                                              <li type="square">Provided default news sources with the additional facility of adding new sources in case the user wanted</li>
+                                              <li type="square">Implemented Evernote integration into the app so as to allow the user to connect to their Evernote accounts from within the app and save the specific news to it.</li>
+                                          </ul> 
+              </p>
+              <a href="https://github.com/PratikRJoshi/Inedependent-Projects/tree/master/RSS-Feed" target="_blank" class="btn btn-custom">Check out project source</a>
             </div>        
                 <br/>
                 <br/>
-                <br/> 
+                <br/>
+
+            <div id="box13">
+              <p class="project-title" id="chatRoom">Online Chat Rooms</p>
+              <p id="duration">[Java - Multithreading, Swing API]</p>
+              <p id="project-description"><ul>
+                                              <li type="circle">Designed and developed chat room application for multiple users to chat together.</li>
+                                              <li type="circle">Implemented a feature wherein users can send private messages to specific person in the room using ‘@’ when needed.</li>
+                                              <li type="circle">Implemented using network sockets and multithreading concepts to build the chat application and design the interface using Java Swing API.</li>
+                                          </ul>
+              </p>
+              <p id="github"><a href="https://github.com/PratikRJoshi/Inedependent-Projects/tree/master/Chat-Rooms" target="_blank" class="btn btn-custom">Check out project source</a></p>
+            </div>
+
+                <br/>
+                <br/>
+                <br/>  
           </section>
       </section>
 
