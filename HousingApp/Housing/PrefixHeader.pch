@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Housing
+//
+//  Created by WelcomingPractices on 2/2/15.
+//  Copyright (c) 2015 Pratik Joshi. All rights reserved.
+//
+
+#ifndef Housing_PrefixHeader_pch
+#define Housing_PrefixHeader_pch
+#import <UIKit/UIKit.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

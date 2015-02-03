@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FacebookSDK/FacebookSDK.h>
+#import "FacebookSDK.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface HousingAppViewController : UIViewController<FBLoginViewDelegate>
